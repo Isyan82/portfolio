@@ -88,8 +88,8 @@
       <div class="menu__block">
         <div class="menu__close">
           <svg
-            width="29"
-            height="30"
+            width="20"
+            height="20"
             viewBox="0 0 29 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -113,8 +113,8 @@
         <div class="menu__social">
           <a href="https://github.com/Isyan82" target="_blank"
             ><svg
-              width="20"
-              height="19"
+              width="25"
+              height="25"
               viewBox="0 0 20 19"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -128,8 +128,8 @@
 
           <a href="https://tlgg.ru/@IvanIsyanov" target="_blank">
             <svg
-              width="20"
-              height="20"
+              width="25"
+              height="25"
               viewBox="0 0 30 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -143,8 +143,8 @@
 
           <a href="https://soundcloud.com/isea-n" target="_blank">
             <svg
-              width="20"
-              height="20"
+              width="25"
+              height="25"
               fill="none"
               viewBox="0 0 512 512"
               xmlns="http://www.w3.org/2000/svg"
@@ -187,8 +187,8 @@
           <h3 class="about__subtittle section__subtitle">Меня зовут Иван</h3>
           <div class="about__description">
             Я давно работаю за комьпьютером, профессионально создаю на нем
-            электронную музыку и саундтреки, монтировал документальные и
-            художественные фильмы. Давно интересовался веб-разработкой, потому
+            электронную музыку и саундтреки к фильмам, монтировал документальные
+            и художественные фильмы. Давно интересовался веб-разработкой, потому
             что очень люблю создавать продукты на компьютере, к тому же
             программирование - очень творческий и безумно интересный процесс! Во
             время пандемии появилась возможность реализовать себя в этой
@@ -601,7 +601,7 @@
                   <h4 class="column__item-title">ItGid</h4>
                   <div class="column__item-location">Курс «ReactJS»</div>
                   <div class="column__body">
-                    Этот курс обучает самому популярному фреймворку JavaScript –
+                    Этот курс обучает самомой популярной JavaScript-библиотеке –
                     React.
                   </div>
                 </div>
@@ -652,7 +652,7 @@
                   </div>
                   <div class="column__body">
                     Очень объемный курс по языку програмирования JavaScript и
-                    библиотеку React, учит работать с Git и GitHub.
+                    библиотеке React, учит работать с Git и GitHub.
                   </div>
                 </div>
               </li>
@@ -722,7 +722,7 @@
                     AAA | Москва (2021-2022)
                   </div>
                   <div class="column__body">
-                    Пришел в компанию на стажировку и впоследствии был приглашен
+                    Пришёл в компанию на стажировку и впоследствии был приглашен
                     младшим Фронтенд-разработчиком.
                   </div>
                 </div>
@@ -1369,7 +1369,11 @@
               </svg>
             </a>
 
-            <a href="#" class="contacts__link" target="_blank">
+            <a
+              href="https://www.instagram.com/ivan_isyanov/"
+              class="contacts__link"
+              target="_blank"
+            >
               <svg
                 width="30"
                 height="30"
@@ -1413,20 +1417,26 @@
             Или оставьте ваши данные и я сам вам напишу:
           </div>
 
-          <form action="#" class="contacts__form">
+          <form action="#" method="POST" class="contacts__form">
             <div class="contacts__input">
               <input
                 id="name"
                 name="name"
                 type="text"
-                placeholder="Иван"
+                placeholder="Иван Иванов"
                 required
               />
               <label for="name">Ваше имя</label>
             </div>
 
             <div class="contacts__input">
-              <input id="email" name="email" type="email" required />
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="example@gmail.com"
+                required
+              />
               <label for="email">Ваша почта</label>
             </div>
 
@@ -1450,6 +1460,16 @@
         </div>
       </div>
     </section>
+
+    <div class="overlay">
+      <div class="modal">
+        <div class="modal__close">&times;</div>
+        <div class="modal__text">
+          Спасибо за вашу заявку! <br />
+          Я скоро с вами свяжусь.
+        </div>
+      </div>
+    </div>
 
     <script src="js/script.js"></script>
   </body>

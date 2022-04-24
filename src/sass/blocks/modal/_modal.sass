@@ -1,0 +1,47 @@
+
+.overlay
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, .56)
+	opacity: 0
+	visibility: hidden
+	transition: all .6s
+	&.active
+		visibility: visible
+		opacity: 1
+.modal
+	position: absolute
+	top: -100%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 250rem
+	margin: 0 auto
+	border: 1px solid grey
+	border-radius: 4rem
+	background: #fff
+	padding: 30rem
+	visibility: hidden
+	transition: all .8s
+	&.active
+		top: 50%
+		visibility: visible
+	&__close
+		color: #fff
+		position: absolute
+		top: -5rem
+		right: -25rem
+		font-size: 25rem
+		opacity: 0
+		transition: all 1s
+		&.active
+			opacity: 1
+	.container
+		text-align: center
+	&__text
+		color: black
+		text-align: center
+		line-height: 26rem
+		
+		
