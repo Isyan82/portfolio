@@ -6,6 +6,7 @@ html
     font-size: 1px
     font-family: "Roboto"
     position: relative
+    scroll-behavior: smooth
 body
     font-size: 16px
     
@@ -13,8 +14,7 @@ body
     margin: 0
     padding: 0
     box-sizing: border-box
-
-
+    
 div
     font-weight: 100
 
@@ -36,6 +36,10 @@ img
 .rotate__icon
     transform: rotate(-90deg)
 
+
+        
+
+
 @import 'blocks/promo/_promo'
 @import 'blocks/buttons/_buttons'
 @import 'blocks/sidepanel/_sidepanel'
@@ -47,7 +51,8 @@ img
 @import 'blocks/portfolio/_portfolio'
 @import 'blocks/price/_price'
 @import 'blocks/contacts/_contacts'
-@import './blocks/modal/_modal'
+@import 'blocks/modal/_modal'
+@import 'blocks/pageup/_pageup'
 
 // media
 @media ( max-width:  1339px)
@@ -85,6 +90,7 @@ img
 @import 'blocks/portfolio/_portfolio-media'
 @import 'blocks/price/_price-media'
 @import 'blocks/contacts/_contacts-media'
+@import 'blocks/pageup/_pageup-media'
 
 
 

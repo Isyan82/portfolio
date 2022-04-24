@@ -1,19 +1,21 @@
 /*
-Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.
-        on line 8 of /Volumes/Mac HD/Udemy/PORTFOLIO_PROJ/Portfolio_starter/src/sass/blocks/promo.sass
-        from line 24 of /Volumes/Mac HD/Udemy/PORTFOLIO_PROJ/Portfolio_starter/src/sass/style.sass
+Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 tabs.
+        on line 4 of /Volumes/Mac HD/Udemy/WEB DEVELOPER/portfolio_proj_3/src/sass/blocks/resume/_resume.sass
+        from line 48 of /Volumes/Mac HD/Udemy/WEB DEVELOPER/portfolio_proj_3/src/sass/style.sass
 
-3:     min-height: 100vh
-4:     position: relative
-5:     background: url('.././img/bg/promo-bg.jpg') no-repeat 50%/cover
-6:     padding-top: 205rem
-7: 
-8: 	&__subtitle
-9: 	    font-size: 20px
+1: .resume .container
+2: 		padding: 120rem 65rem 0
+3: 		text-align: center
+4: 	&__subtitle
+5: 		margin-bottom: 86rem
+6: 	&__wrapper
+7: 		display: grid
+8: 		grid-template-columns: repeat(2, 425rem)
+9: 		column-gap: 135rem			
 
 Backtrace:
-/Volumes/Mac HD/Udemy/PORTFOLIO_PROJ/Portfolio_starter/src/sass/blocks/promo.sass:8
-/Volumes/Mac HD/Udemy/PORTFOLIO_PROJ/Portfolio_starter/src/sass/style.sass:24
+/Volumes/Mac HD/Udemy/WEB DEVELOPER/portfolio_proj_3/src/sass/blocks/resume/_resume.sass:4
+/Volumes/Mac HD/Udemy/WEB DEVELOPER/portfolio_proj_3/src/sass/style.sass:48
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:494:in `block in tabulate'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each'
 /Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:452:in `each_with_index'
@@ -57,4 +59,5 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 8 of /Volumes/Mac HD/Udemy/PORTFOLIO_PROJ/Portfolio_starter/src/sass/blocks/promo.sass\A         from line 24 of /Volumes/Mac HD/Udemy/PORTFOLIO_PROJ/Portfolio_starter/src/sass/style.sass\A \A 3:     min-height: 100vh\A 4:     position: relative\A 5:     background: url('.././img/bg/promo-bg.jpg') no-repeat 50%/cover\A 6:     padding-top: 205rem\A 7: \A 8: 	&__subtitle\A 9: 	    font-size: 20px"; }
+  content: "Error: Inconsistent indentation: 1 tab was used for indentation, but the rest of the document was indented using 2 tabs.\A         on line 4 of /Volumes/Mac HD/Udemy/WEB DEVELOPER/portfolio_proj_3/src/sass/blocks/resume/_resume.sass\A         from line 48 of /Volumes/Mac HD/Udemy/WEB DEVELOPER/portfolio_proj_3/src/sass/style.sass\A \A 1: .resume .container\A 2: 		padding: 120rem 65rem 0\A 3: 		text-align: center\A 4: 	&__subtitle\A 5: 		margin-bottom: 86rem\A 6: 	&__wrapper\A 7: 		display: grid\A 8: 		grid-template-columns: repeat(2, 425rem)\A 9: 		column-gap: 135rem			";
+}
