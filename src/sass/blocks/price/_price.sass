@@ -1,0 +1,42 @@
+.price
+	.container
+		padding: 0 50rem
+		text-align: center
+		padding-top: 65rem
+	&__title
+		margin-bottom: 91rem
+	&__list
+		display: grid
+		grid-template-columns: repeat(2, auto)
+		justify-content: space-around
+	&__item
+		display: grid
+		grid-template-areas: 'title title title count' "descr descr descr descr"
+		margin-bottom: 15rem
+		&-title
+			position: relative
+			text-align: left
+			font-size: 14rem
+			line-height: 21rem
+			grid-area: title
+			margin-bottom: 5rem
+			padding-left: 26rem
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				width: 15rem
+				height: 15rem
+				border-radius: 100%
+				background: $main-color
+		&-count
+			text-align: right
+			font-size: 14rem
+			line-height: 21rem
+			grid-area: count
+		&-description
+			text-align: left
+			font-size: 12rem
+			line-height: 18rem
+			grid-area: descr
+			padding-left: 26rem

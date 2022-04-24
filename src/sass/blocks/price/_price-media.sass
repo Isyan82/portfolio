@@ -1,0 +1,23 @@
+@media ( max-width:  992px)
+	.price
+		&__list
+			grid-template-columns: 1fr
+			column-gap: 30rem
+
+@media ( max-width:  768px)
+	.price
+		&__title
+			margin-bottom: 60rem
+
+@media ( max-width:  576px)
+	.price
+		.container
+			padding: 65rem 20rem 0
+		&__title
+			margin-bottom: 30rem
+		&__item
+			grid-template-areas: "title title count count" "descr descr descr descr"
+			&-title
+				font-size: 12rem
+			&-count
+				font-size: 12rem

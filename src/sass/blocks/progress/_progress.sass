@@ -1,0 +1,37 @@
+
+.progress
+	&__list
+		display: grid
+		grid-template-columns: repeat(auto-fill, 350rem)
+		justify-content: space-around
+	&__item
+		display: grid
+		grid-template-areas: 'title title title counter' "scale scale scale scale"
+		padding-bottom: 38rem
+	&__title
+		position: relative
+		font-size: 15rem
+		line-height: 21rem
+		grid-area: title
+		text-align: left
+		padding-left: 14rem
+		margin-bottom: 27rem
+		@include before__circle
+		&::before
+			top: -8rem
+	&__counter
+		grid-area: counter
+		text-align: end
+		font-size: 14rem
+		line-height: 21rem
+	&__scale
+		width: 350rem
+		height: 14rem
+		background: #E8E4DE
+		border-radius: 4rem
+		grid-area: scale
+	&__level
+		display: block
+		height: 14rem
+		background: $header-color
+		border-radius: 4rem

@@ -1,0 +1,89 @@
+@import 'base/_variables'
+@import 'base/_mixins'
+@import 'blocks/title/_title'
+
+html
+    font-size: 1px
+    font-family: "Roboto"
+body
+    font-size: 16px
+
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+div
+    font-weight: 100
+
+li
+    list-style: none
+a
+    text-decoration: none
+
+.container
+    width: 1140rem
+    margin: 0 auto
+
+img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+          
+.rotate__icon
+    transform: rotate(-90deg)
+
+@import 'blocks/promo/_promo'
+@import 'blocks/buttons/_buttons'
+@import 'blocks/sidepanel/_sidepanel'
+@import 'blocks/menu/_menu'
+@import 'blocks/about/_about'
+@import 'blocks/resume/_resume'
+@import 'blocks/skills/_skills'
+@import 'blocks/progress/_progress'
+@import 'blocks/portfolio/_portfolio'
+@import 'blocks/price/_price'
+@import 'blocks/contacts/_contacts'
+
+// media
+@media ( max-width:  1339px)
+    .sidepanel
+        display: none
+@media ( max-width:  1200px)
+    .container
+        max-width: 960rem
+@media ( max-width:  992px)
+    .container
+        max-width: 720rem
+    .section
+        &__title
+            font-size: 17rem
+        &__subtitle
+            font-size: 25rem
+    .section__subtitle
+        &::after
+            bottom: -5rem
+@media ( max-width:  768px)
+    .container
+        max-width: 540rem
+@media ( max-width:  576px)
+    .container
+        max-width: 100%
+        padding: 0 10rem
+    .section__subtitle
+        font-size: 24rem
+
+@import 'blocks/promo/_promo-media'
+@import 'blocks/about/_about-media'
+@import 'blocks/resume/_resume-media'
+@import 'blocks/skills/_skills-media'
+@import 'blocks/progress/_progress-media'
+@import 'blocks/portfolio/_portfolio-media'
+@import 'blocks/price/_price-media'
+@import 'blocks/contacts/_contacts-media'
+
+
+
+
+

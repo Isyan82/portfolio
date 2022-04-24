@@ -1,0 +1,49 @@
+// .about 
+.about
+    .container
+        display: grid
+        grid-template-columns: 400rem 740rem
+        padding-top: 120rem
+    &__photo
+        border: 1rem solid grey
+
+    &__text
+        padding: 0 100rem 0 70rem
+    &__title
+        padding-left: 15rem
+        padding-top: 8rem
+        &::before
+            top: 0
+            left: 20rem
+    &__subtittle
+        margin-bottom: 23rem
+        &::after
+            left: 30rem
+            bottom: -3rem
+    &__description
+        font-size: 14rem
+        line-height: 21rem
+        margin-bottom: 40rem
+    &__skills
+        display: grid
+        grid-template-columns: repeat(2, 320rem)
+        justify-content: space-between
+        &-item
+            position: relative
+            padding-left: 60rem
+            margin-bottom: 35rem
+            @include before__circle
+            &::before
+                top: 0
+        &-icon
+            position: absolute
+            left: 15rem
+            top: 15rem
+        &-title
+            font-size: 14rem
+            line-height: 21rem
+            font-weight: 700
+            margin-bottom: 6rem
+        &-description
+            font-size: 12rem
+            line-height: 18rem

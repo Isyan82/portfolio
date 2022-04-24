@@ -1,0 +1,36 @@
+@media ( max-width:  1200px)
+	.resume
+		.container
+			padding: 120rem 40rem 0
+		&__wrapper
+			column-gap: 0rem
+			justify-content: space-between
+
+@media ( max-width:  992px)
+	.resume
+		&__wrapper
+			grid-template-columns: repeat(2, 340rem)
+	.column
+		&__item
+			&::after
+				width: 20rem
+			&-icon
+				left: 45rem
+			&-location
+				text-align: left
+				padding-left: 106rem
+
+@media ( max-width:  768px)
+	.resume
+		.container
+			padding: 70rem 10rem 0
+		&__wrapper
+			grid-template-columns: 1fr
+		&__subtitle
+			margin-bottom: 60rem
+
+	
+	
+	
+	
+	

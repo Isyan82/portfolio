@@ -1,0 +1,26 @@
+.section__title
+	position: relative
+	font-size: 19rem
+	line-height: 24rem
+	font-weight: 400
+	margin-bottom: 6rem
+	@include before__circle
+	&::before
+		left: 50%
+		transform: translateX(-50%)
+		top: -7rem
+.section__subtitle
+	position: relative
+	font-size: 37rem
+	line-height: 60rem
+	font-weight: 400
+	&::after
+		content: ''
+		position: absolute
+		width: 60rem
+		height: 3rem
+		background: $main-color
+		background: $header-color
+		bottom: -24rem
+		left: 50%
+		transform: translateX(-50%)

@@ -1,0 +1,31 @@
+.promo
+    color: #fff
+    min-height: 100vh
+    position: relative
+    background: url('.././img/bg/promo_bg.jpg') no-repeat 50%/cover
+    padding-top: 205rem
+    &__subtitle
+        font-size: 16rem
+        line-height: 24rem
+        font-weight: 400
+        position: relative
+        padding-left: 10rem
+        z-index: 2
+        @include before__circle
+        &::before
+            background: $header-color
+    &__title
+        font-size: 48rem
+        line-height: 60rem
+        font-weight: 400
+        width: 535rem
+        margin-top: 10rem
+    &__buttons
+        margin-top: 25rem
+        display: flex
+        width: 250rem
+        justify-content: space-between
+        align-items: center
+    &__link
+        color: #fff
+        font-weight: 400

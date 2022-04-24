@@ -1,0 +1,94 @@
+.hanburger
+    position: absolute
+    top: 20rem
+    right: 30rem
+    height: 21rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    cursor: pointer
+    span
+        display: block
+        width: 30rem
+        height: 3rem
+        background: #fff
+    span.hanburger-long
+        width: 36rem  
+.menu
+    position: fixed
+    top: 0
+    left: -100%
+    width: 100%
+    height: 100vh
+    z-index: 10
+    visibility: hidden
+    opacity: 0
+    transition: all .6s
+    &.active
+        opacity: 1
+        visibility: visible
+        left: 0
+
+    &__block
+        position: relative
+        width: 345rem
+        background: $header-color
+        height: 100%
+        padding-top: 140rem
+        padding-left: 75rem
+        border-radius: 0 5rem 5rem 0
+        transition: all .6s
+        z-index: 10
+    &__close
+        position: absolute
+        top: 25rem
+        right: 25rem
+        cursor: pointer
+        svg path
+            fill: #fff
+    &__link
+        position: relative
+        font-size: 24rem
+        font-weight: 400
+        line-height: 36rem
+        margin-bottom: 15rem
+        &::before
+            content: ''
+            position: absolute
+            left: -35rem
+            top: 8rem
+            width: 15rem
+            height: 15rem
+            border-radius: 100%
+            border: 1px solid black
+            transition: all .6s
+        &:hover
+            &::before
+                background: #fff           
+        a
+            color: #fff
+            &:hover
+                text-decoration: revert
+    &__social
+        position: absolute
+        bottom: 50rem
+        left: 50%
+        transform: translateX(-50%)
+        width: 90rem
+        display: flex
+        justify-content: space-between
+        svg path
+                    fill: #fff 
+        a
+            &:hover
+                svg path
+                    fill: red         
+    &__overlay
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: #fff
+        opacity: .75

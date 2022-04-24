@@ -1,0 +1,40 @@
+@media ( max-width:  1200px)
+	.about
+		.container
+			grid-template-columns: 400rem 530rem
+			padding-top: 50rem
+			gap: 40rem
+		&__text
+			padding: 0 20rem 0 0
+		&__skills
+			grid-template-columns: repeat(2, 250rem)
+			&-item
+				margin-bottom: 20rem
+				padding-left: 50rem
+		&__description
+			font-size: 13rem
+			margin-bottom: 30rem
+
+
+@media ( max-width:  992px)
+	.about
+		.container
+			grid-template-columns: 340rem 340rem
+			padding-top: 25rem
+			gap: 40rem
+		
+		&__description
+			font-size: 12rem
+			margin-bottom: 24rem
+		&__skills
+			grid-template-columns:  minmax(250rem, auto)
+			&-item
+				padding-left: 50rem
+		
+@media ( max-width:  768px)
+	.about
+		.container
+			grid-template: 400rem / 1fr
+			gap: 30rem
+		&__text
+			padding: 0

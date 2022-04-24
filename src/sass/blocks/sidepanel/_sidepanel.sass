@@ -1,0 +1,30 @@
+.sidepanel
+    position: fixed
+    top: 230rem
+    left: 50rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 360rem
+    color: #fff
+    z-index: 3
+    &__link
+        svg path
+            fill: grey
+        &:hover
+            svg path
+                fill: red
+    &_divider
+        height: 70rem
+        width: 2rem
+        background: grey
+    &__text
+        height: 150rem
+        width: 16rem
+        color: grey
+        font-weight: 400
+        span
+            display: block
+            transform: rotate(-90deg) translate(-35%, -286%)
+            width: 150rem

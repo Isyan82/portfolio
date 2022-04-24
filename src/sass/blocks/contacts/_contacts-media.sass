@@ -1,0 +1,44 @@
+@media ( max-width:  1200px)
+	.contacts
+		.container
+			grid-template-columns: 1fr
+		&__photo
+			display: none
+		&__form
+			grid-template: 45rem 190rem 45rem/repeat(2, 1fr)
+			column-gap: 40rem
+		&__textarea
+			textarea
+				width: 100%
+
+@media ( max-width:  992px)
+	.contacts
+		&__btn
+			font-size: 12rem
+			width: 190rem
+
+@media ( max-width:  768px)
+	.contacts
+		padding-top: 50rem
+		.container
+			padding-bottom: 50rem
+		&__form
+			display: block
+			div
+				margin-bottom: 20rem
+
+@media ( max-width:  576px)
+	.contacts
+		.container
+			padding-bottom: 20rem
+		&__form
+			column-gap: 10rem
+		&__triggers
+			grid-template-columns: none
+			grid-template-rows: repeat(2, auto)
+			margin: 0
+		&__btn
+			grid-row: 2/3
+			margin: 0 auto
+		&__policy
+			justify-content: center
