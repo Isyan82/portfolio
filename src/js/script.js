@@ -96,7 +96,7 @@ form.addEventListener('submit', (evt) => {
 				form.reset();
 			} else {
 				// Объявление о неуспешной оправке формы
-				showModal('Попробуйте позже, <br/>что-то пошло не так.')
+				showModal('Что-то пошло не так, <br/> пожалуйста, напишите мне на почту.')
 				showModalClose();
 				setTimeout(() => {
 					closeModalElement(overlay);
